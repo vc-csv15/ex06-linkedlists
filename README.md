@@ -117,9 +117,9 @@ The following table describes what each function should do:
 | insert        | iterator       | iterator where, const T &value | Inserts an element to the list as the next item after the iterator `where`. 
 | erase         | iterator       | iterator where      | Erases the element in the list pointed to by the node at the iterator. |
 | erase         | iterator       | iterator first, iterator last | Erases all the elements in the list from the node pointed to by the first iterator to the last iterator. |
-| push_back     | none           | const T &value      | Push a new node to the head of the list. |
+| push_back     | none           | const T &value      | Push a new node to the tail of the list. |
 | pop_back      | none           | none                | Remove the last node in the linked list. This will require walking the list to the end because the list is singly linked. |
-| push_front    | none           | const T &value      | Push a new node to the tail of the list. |
+| push_front    | none           | const T &value      | Push a new node to the head of the list. |
 | pop_front     | none           | none                | Remove the first node in the linked list. |
 | swap          | none           | LinkedList &other   | Swaps two linked lists. This should be as simple as swapping the head, tail and size of `this` and `other`. |
 
